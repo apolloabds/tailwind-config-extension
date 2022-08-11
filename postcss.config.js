@@ -26,23 +26,8 @@ const tw = {
 };
 
 const config = {
-  // add postcss plugins
-  plugins: [
-    // optional, postcss import
-    require('postcss-import'),
-    // optional, nested css
-    require('tailwindcss/nesting'),
-    // required to extend, add tailwind css
-    require('tailwindcss')(tw),
-    // optional, add postcss preset environment
-    require('postcss-preset-env')({
-      features: {
-        'nesting-rules': false,
-      },
-    }),
-    // optional, automatically apply css prefixes
-    require('autoprefixer'),
-  ],
+  // add postcss plugins, required to extend apollo tailwind config
+  plugins: [require('tailwindcss')(tw)],
 };
 
 module.exports = config;
