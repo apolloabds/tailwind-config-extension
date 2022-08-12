@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind with JavaScript</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="text-brand-new-500 z-10">
+  <nav
+    class="font-sans bg-secondary-50 text-center flex justify-center items-center mb-8 py-8 px-6 mx-auto overflow-hidden">
+    <ul class="text-sm text-gray-700 list-none p-0 flex items-center">
+      <li><a href="#" class="inline-block py-2 px-3 hover:text-gray-700 underline">Products</a></li>
+      <li><a href="#" class="inline-block py-2 px-3 hover:text-gray-700 underline">Pricing</a></li>
+      <li><a href="#" class="inline-block py-2 px-3 hover:text-gray-700 underline">About Us</a></li>
+      <li><a href="#" class="inline-block py-2 px-3 hover:text-gray-700 underline">Status</a></li>
+    </ul>
+    <button class="text-sm bg-black hover:bg-text-gray-800 text-white ml-12 py-2 px-3">
+      Log In
+    </button>
+  </nav>
+
+  <section class="bg-white font-sans">
+    <h2 class="text-center text-xl mb-8">Example Colors</h2>
+
+    <div class="container m-auto flex flex-wrap items-center justify-center">
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col mb-8 px-3">
+        <div class="overflow-hidden bg-white rounded-lg shadow hover:shadow-raised hover:translateY-2px transition">
+          <div class="bg-brand h-48"></div>
+          <h3 class="font-medium mb-4 leading-normal p-6 text-center">brand</h3>
+        </div>
+      </div>
+
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col mb-8 px-3">
+        <div class="overflow-hidden bg-white rounded-lg shadow hover:shadow-raised hover:translateY-2px transition">
+          <div class="bg-secondary h-48"></div>
+          <h3 class="font-medium mb-4 leading-normal p-6 text-center">secondary</h3>
+        </div>
+      </div>
+
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col mb-8 px-3">
+        <div class="overflow-hidden bg-white rounded-lg shadow hover:shadow-raised hover:translateY-2px transition">
+          <div class="bg-accent h-48"></div>
+          <h3 class="font-medium mb-4 leading-normal p-6 text-center">accent</h3>
+        </div>
+      </div>
+
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col mb-8 px-3">
+        <div class="overflow-hidden bg-white rounded-lg shadow hover:shadow-raised hover:translateY-2px transition">
+          <div class="bg-danger h-48"></div>
+          <h3 class="font-medium mb-4 leading-normal p-6 text-center">danger</h3>
+        </div>
+      </div>
+
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col mb-8 px-3">
+        <div class="overflow-hidden bg-white rounded-lg shadow hover:shadow-raised hover:translateY-2px transition">
+          <div class="bg-success h-48"></div>
+          <h3 class="font-medium mb-4 leading-normal p-6 text-center">success</h3>
+        </div>
+      </div>
+
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col mb-8 px-3">
+        <div class="overflow-hidden bg-white rounded-lg shadow hover:shadow-raised hover:translateY-2px transition">
+          <div class="bg-warning h-48"></div>
+          <h3 class="font-medium mb-4 leading-normal p-6 text-center">warning</h3>
+        </div>
+      </div>
+
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col mb-8 px-3">
+        <div class="overflow-hidden bg-white rounded-lg shadow hover:shadow-raised hover:translateY-2px transition">
+          <div class="bg-neutral-light h-48"></div>
+          <h3 class="font-medium mb-4 leading-normal p-6 text-center">neutral-light</h3>
+        </div>
+      </div>
+
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col mb-8 px-3">
+        <div class="overflow-hidden bg-white rounded-lg shadow hover:shadow-raised hover:translateY-2px transition">
+          <div class="bg-primary h-48"></div>
+          <h3 class="font-medium mb-4 leading-normal p-6 text-center">primary</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="font-sans container m-auto flex flex-col md:flex-row py-8 px-6 lg:px-0">
+    <div
+      class="w-full md:w-1/4 border-b md:border-0 mb-6 md:mb-0 pb-6 md:pb-0 pr-8 flex justify-center items-start flex-col">
+      <label for="" class="font-bold">Important Note</label>
+      <p class="leading-normal mt-4 border-0 md:border-r md:pr-2">Nullam gravida sem vel massa pulvinar cursus. In
+        sagittis enim vitae eros ultrices sagittis</p>
+    </div>
+    <div class="w-full md:w-3/4 leading-normal column-0 lg:column-2">Contrary to popular belief, Lorem Ipsum is not
+      simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years
+      old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more
+      obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+      literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
+      Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the
+      theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+      amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+      below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
+      reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. </div>
+  </section>
+
+
+  <section class="font-sans text-center py-8 px-4 lg:px-0 bg-gray-300">
+    <div class="container flex flex-col sm:flex-row bg-white m-auto shadow">
+      <div class="w-full sm:w-3/4 px-6 pt-6 text-left flex flex-col justify-center">
+        <h2 class="capitalize font-medium">Ready to get started?</h2>
+        <p class="mt-2 mb-6">But I must explain to you how all this mistaken idea of denouncing </p>
+      </div>
+      <div class="w-full sm:w-1/4 flex justify-start sm:justify-center items-center pl-6 pb-6 sm:pl-0 sm:pb-0">
+        <button
+          class=" bg-black hover:bg-gray-900 text-white hover:text-white py-3 px-6 uppercase text-xs tracking-wide">Learn
+          More</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="font-sans bg-black text-white py-8 px-4">
+    <div class="mx-auto max-w-xl overflow-hidden flex justify-center items-center">
+      <ul class="text-sm list-none p-0 flex items-center">
+        <li><a href="#" class="inline-block py-2 px-3 underline hover:text-gray-500-light">Product</a>
+        </li>
+        <li><a href="#" class="inline-block py-2 px-3 underline hover:text-gray-500-light">Company</a>
+        </li>
+        <li><a href="#" class="inline-block py-2 px-3 underline hover:text-gray-500-light">FAQs</a>
+        </li>
+        <li><a href="#" class="inline-block py-2 px-3 underline hover:text-gray-500-light">About
+            Us</a>
+        </li>
+      </ul>
+
+    </div>
+    <p class="text-center py-2 px-3 text-white text-xs"> © 2022 Company. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

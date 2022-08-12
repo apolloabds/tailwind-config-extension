@@ -1,0 +1,26 @@
+{
+  "name": "tailwind-config-extension",
+  "version": "1.0.0",
+  "license" : "MIT",
+  "description": "Apollo tailwind config extension",
+  "scripts": {
+    "build": "yarn run copy & yarn run styles",
+    "start": "yarn run copy:dev & yarn run styles:dev & yarn run serve:dev",
+    "copy": "npx cpx ./src/*.html dist",
+    "copy:dev": "npx cpx ./src/*.html dist --watch",
+    "styles": "postcss src/styles.css -o dist/styles.css",
+    "styles:dev": "postcss src/styles.css -o dist/styles.css --watch",
+    "serve:dev": "npx live-server ./dist --open --watch --no-css-inject"
+  },
+  "devDependencies": {
+    "postcss": "^8.3.5",
+    "postcss-cli": "^9.0.0",
+    "@abds/styles": "3.3.0",
+    "tailwindcss": "^3.0.23"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not ie <= 11",
+    "not dead"
+  ]
+}
