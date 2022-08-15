@@ -1,4 +1,6 @@
+/* AB Gilroy font family/style/weight source */
 @import 'https://unpkg.com/@abds/styles@3.3.0/dist/fonts.css';
+/* Apollo's implementation of reset css */
 @import 'https://unpkg.com/@abds/styles@3.3.0/dist/reset.css';
 @tailwind base;
 @tailwind components;
