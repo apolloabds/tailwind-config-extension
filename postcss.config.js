@@ -3,7 +3,10 @@ const tailwindConfig = require('@abds/styles/tailwind.resolve.config');
 
 const tw = {
   ...tailwindConfig,
-  // Change array content below to point to the files you would like to purge
+  /**
+    * Content array includes any file containing Tailwind utility classes.
+    * See: https://tailwindcss.com/docs/content-configuration
+    */
   content: ['./src/**/*.{html,js}'],
   darkMode: 'media',
   theme: {
