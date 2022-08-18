@@ -42,6 +42,6 @@ Apollo reset css is a combination of [New CSS Reset v1.4.0](https://github.com/e
 
 ### Tailwind
 
-Tailwind recommended imports that get created with default or modified Tailwind config. More information on [Tailwind base styles](https://tailwindcss.com/docs/preflight).
+[Preflight](https://tailwindcss.com/docs/preflight): An opinionated set of base styles for Tailwind projects.
 
 `@tailwind base; @tailwind components; @tailwind utilities;` - Creates global css variables and other utility classes that are made available for the app.
