@@ -34,7 +34,7 @@ Run the following command to see inside Tailwind config:
 
 ### Fonts
 
-Apollo currently uses AB Gilroy fonts which can be accessed directly via the unpkg.com hosting service (for a more stable experience they can be downloaded locally in case unpkg.com is unavailable for some reason).
+Apollo currently uses AB Gilroy fonts embedded to a css file via the unpkg.com CDN.
 
 ### Reset
 
