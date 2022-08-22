@@ -1,13 +1,20 @@
+// Apollo Tailwind config
 const tailwindConfig = require('@abds/styles/tailwind.resolve.config');
 
 const tw = {
   ...tailwindConfig,
+  /**
+    * Content array includes any file containing Tailwind utility classes.
+    * See: https://tailwindcss.com/docs/content-configuration
+    */
   content: ['./src/**/*.{html,js}'],
   darkMode: 'media',
   theme: {
     ...tailwindConfig.theme,
     textColor: {
+      // Extending existing text colors below
       ...tailwindConfig.theme.textColor,
+      // Overriding existing `brand-new` color below
       'brand-new': {
         DEFAULT: '#2A669F',
         50: '#E4F7F8',
@@ -26,7 +33,7 @@ const tw = {
 };
 
 const config = {
-  // add postcss plugins, required to extend apollo tailwind config
+  // Add postcss plugins, required to extend apollo tailwind config
   plugins: [require('tailwindcss')(tw)],
 };
 
