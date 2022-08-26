@@ -6,10 +6,8 @@
   "scripts": {
     "build": "yarn copy & yarn styles",
     "start": "yarn build",
-    "local:dev": "yarn build & yarn local:serv",
     "copy": "npx cpx ./src/*.html dist --watch",
-    "styles": "postcss src/styles.css -o dist/styles.css --watch",
-    "local:serv": "npx live-server ./dist --watch --open --no-css-inject"
+    "styles": "postcss src/styles.css -o dist/styles.css --watch"
   },
   "devDependencies": {
     "postcss": "^8.3.5",
