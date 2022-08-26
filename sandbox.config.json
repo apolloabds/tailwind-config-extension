@@ -1,7 +1,6 @@
 {
   "container": {
-    "node": "14",
-    "port": 3333
+    "node": "14"
   },
   "hardReloadOnChange": false,
   "infiniteLoopProtection": true,
