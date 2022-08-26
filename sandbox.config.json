@@ -1,7 +1,8 @@
 {
   "container": {
     "node": "14",
-    "port": 3333
+    "port": 3333,
+    "startScript": "start"
   },
   "hardReloadOnChange": false,
   "infiniteLoopProtection": true,
