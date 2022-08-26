@@ -4,7 +4,7 @@
   "license" : "MIT",
   "description": "Apollo tailwind config extension",
   "scripts": {
-    "start": "yarn copy && yarn styles && yarn serve",
+    "start": "yarn copy & yarn styles && yarn serve",
     "start:dev": "yarn copy:dev & yarn styles:dev & yarn serve:dev",
     "copy": "npx cpx ./src/*.html dist",
     "copy:dev": "npx cpx ./src/*.html dist --watch",
