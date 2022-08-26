@@ -4,13 +4,13 @@
   "license" : "MIT",
   "description": "Apollo tailwind config extension",
   "scripts": {
-    "start": "yarn run copy & yarn run styles & yarn run serve",
-    "start:dev": "yarn run copy:dev & yarn run styles:dev & yarn run serve:dev",
+    "start": "yarn copy && yarn styles && yarn serve",
+    "start:dev": "yarn copy:dev & yarn styles:dev & yarn serve:dev",
     "copy": "npx cpx ./src/*.html dist",
     "copy:dev": "npx cpx ./src/*.html dist --watch",
     "styles": "postcss src/styles.css -o dist/styles.css",
     "styles:dev": "postcss src/styles.css -o dist/styles.css --watch",
-    "serve": "npx live-server ./dist --watch --no-css-inject",
+    "serve": "npx live-server ./dist --open --watch --no-css-inject",
     "serve:dev": "npx live-server ./dist --open --watch --no-css-inject"
   },
   "devDependencies": {
