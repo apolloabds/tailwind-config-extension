@@ -6,7 +6,7 @@
   "scripts": {
     "build": "yarn copy & yarn styles",
     "start": "yarn build",
-    "start:dev": "yarn build & yarn serve",
+    "custom": "yarn build & yarn serve",
     "copy": "npx cpx ./src/*.html dist --watch",
     "styles": "postcss src/styles.css -o dist/styles.css --watch",
     "serve": "npx live-server ./dist --watch --open --no-css-inject"
