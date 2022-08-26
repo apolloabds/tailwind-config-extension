@@ -1,0 +1,9 @@
+{
+  "container": {
+    "node": "14"
+  },
+  "hardReloadOnChange": true,
+  "infiniteLoopProtection": true,
+  "view": "browser",
+  "template": "node"
+}
