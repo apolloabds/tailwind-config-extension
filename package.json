@@ -5,10 +5,11 @@
   "description": "Apollo tailwind config extension",
   "scripts": {
     "build": "yarn copy && yarn styles",
-    "start": "yarn copy --watch & yarn styles --watch & yarn serve",
     "copy": "npx cpx ./src/*.html dist",
+    "serve": "npx live-server ./dist --watch --open --no-css-inject --port=3333",
+    "start": "yarn build && yarn serve & yarn watch",
     "styles": "postcss src/styles.css -o dist/styles.css",
-    "serve": "npx live-server ./dist --watch --open --no-css-inject --port=3333"
+    "watch": "yarn copy --watch & yarn styles --watch"
   },
   "devDependencies": {
     "postcss": "^8.3.5",
