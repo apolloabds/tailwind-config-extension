@@ -1,6 +1,6 @@
 # Apollo Tailwind configuration extension
 
-The purpose of this example application is to demostrate how Apollo Tailwind configuration can be used, extended and overriden. [Learn more about Tailwind](https://tailwindcss.com/docs/installation).
+The purpose of this example application is to demonstrate how Apollo Tailwind configuration can be used, extended and overridden. [Learn more about Tailwind](https://tailwindcss.com/docs/installation).
 
 ## Run
 
